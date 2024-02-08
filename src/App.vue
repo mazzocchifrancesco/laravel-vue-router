@@ -3,9 +3,12 @@
 
 import axios from 'axios'; //importo Axios
 import { store } from "./store.js" //state management
+import AppHeader from "./components/AppHeader.vue"
 
 export default {
-
+	components: {
+		AppHeader
+	},
 	data() {
 		return {
 			store
@@ -36,6 +39,7 @@ export default {
 </script>
 
 <template>
+	<AppHeader />
 	<router-view></router-view>
 </template>
 

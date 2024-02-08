@@ -1,10 +1,17 @@
 <script>
-import AppEventList from "../components/AppEventList.vue"
+import { store } from "../store.js"
+import EventCard from "../components/EventCard.vue"
+
 
 export default {
     name: "home",
     components: {
-        AppEventList
+        EventCard
+    },
+    data() {
+        return {
+            store
+        }
     }
 }
 </script>
@@ -14,8 +21,11 @@ export default {
         <div class="row">
             <h1 class="mb-3">Home</h1>
         </div>
+        <div class="row g-4">
+
+            <EventCard v-for="evento in store.eventList" :evento="evento" />
+        </div>
     </div>
-    <AppEventList />
 </template>
 
 <style scoped></style>
