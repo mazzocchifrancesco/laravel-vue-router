@@ -12,6 +12,10 @@ export default {
                     routeName: "about",
                     label: "Chi siamo"
                 },
+                {
+                    routeName: "eventi",
+                    label: "Eventi"
+                },
             ]
         }
     },

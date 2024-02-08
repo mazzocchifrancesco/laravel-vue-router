@@ -13,8 +13,8 @@ export default {
 </script>
 
 <template>
-    <div class="card h-100 col-md-4">
-        <div class="card-header">{{ evento.date }}</div>
+    <div class="card col-md-4">
+        <div class="card-header">{{ evento.event_date }}</div>
 
         <div class="card-body">
             <div class="imgBoxIndex rounded">
@@ -26,9 +26,26 @@ export default {
             </p>
         </div>
         <div class="card-footer text-center">
-            <a href="#" class=" btn-primary">
+            <router-link :to="{ name: 'event-details', params: { id: evento.id } }" class=" btn-primary">
                 <font-awesome-icon icon="fa-solid fa-circle-info fa-2xl" class="" />
-            </a>
+            </router-link>
+
         </div>
     </div>
 </template>
+<style scoped>
+.cardImg {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.imgBoxIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 10rem;
+
+}
+</style>

@@ -15,20 +15,3 @@ body {
     background-color: $themeColorDark;
     color: $themeColorLight;
 }
-
-//todo spostare e fixare i nomi
-
-.cardImg {
-    max-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-}
-
-.imgBoxIndex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 10rem;
-
-}
