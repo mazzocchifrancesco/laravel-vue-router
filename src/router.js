@@ -11,7 +11,7 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-            path: '/home',
+            path: '/',
             name: 'home',
             component: Home
         },
@@ -29,6 +29,7 @@ const router = createRouter({
             path: '/eventi/:id',
             name: 'event-details',
             component: EventDetails,
+            props: true
         }
     ]
 });

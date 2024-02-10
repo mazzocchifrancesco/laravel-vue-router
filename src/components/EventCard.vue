@@ -29,6 +29,14 @@ export default {
             <router-link :to="{ name: 'event-details', params: { id: evento.id } }" class=" btn-primary">
                 <font-awesome-icon icon="fa-solid fa-circle-info fa-2xl" class="" />
             </router-link>
+            <!-- <router-link :to="{
+                name: 'event-details', query: {
+                    evento: { 'id': 1, 'name': evento.name, 'biglietti': available_tickets }
+                },
+                params: { id: evento.id }
+            }" class=" btn-primary">
+                <font-awesome-icon icon="fa-solid fa-circle-info fa-2xl" class="" />
+            </router-link> -->
 
         </div>
     </div>
