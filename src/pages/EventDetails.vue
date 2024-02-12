@@ -57,11 +57,14 @@ export default {
                         <p><strong>Dove: </strong>{{ evento?.location }}</p>
                         <p><strong>Quando: </strong>{{ evento?.event_date }}</p>
                         <p><strong>Organizzatore: </strong>{{ evento?.organizer }}</p>
+                        <span v-for="tag in evento?.tags" class="fw-bold me-2">#{{ tag.name }}</span>
+
 
 
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </template>
