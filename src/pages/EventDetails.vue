@@ -18,7 +18,6 @@ export default {
 
             let url = this.store.apiUrl + this.store.apiEventEndpoint + this.id;
             console.log(url);
-
             axios.get(url).then(risultato => {
                 if (risultato.status === 200 && risultato.data.success) {
                     console.log(risultato.data.payload);

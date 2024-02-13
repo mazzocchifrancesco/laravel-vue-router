@@ -19,7 +19,7 @@ export default {
 <template>
     <div class="container">
         <div class="row">
-            <h1 class="mb-3">Eventi</h1>
+            <h1 class="mb-3 my-5">Eventi</h1>
         </div>
         <div class="row g-4">
 
